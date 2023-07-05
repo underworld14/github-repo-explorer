@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Box, Typography, TextField, Chip } from "@mui/material";
+import { Box, Typography, TextField, Chip, Stack, Button } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import SearchIcon from "@mui/icons-material/Search";
 import { lightGreen } from "@mui/material/colors";
@@ -40,6 +40,11 @@ export default function DesktopSidebar({
     }
   }, [debouncedSearch]);
 
+  const handleClearRecentSearches = () => {
+    localStorage.removeItem("recentSearches");
+    setRecentSearches([]);
+  };
+
   return (
     <Box
       component="aside"
@@ -67,10 +72,15 @@ export default function DesktopSidebar({
           startAdornment: <SearchIcon sx={{ mr: 2 }} />,
         }}
       />
-      <Typography mt={3} fontWeight={700} fontSize={18} color="white">
-        Recent Searches
-      </Typography>
-      <Box mt={2} display="flex" gap={2} flexWrap="wrap">
+      <Stack mt={3} direction="row" justifyContent="space-between" alignItems="center">
+        <Typography fontWeight={700} fontSize={18} color="white">
+          Recent Searches
+        </Typography>
+        <Button color="info" sx={{ color: "#fff" }} onClick={handleClearRecentSearches}>
+          Clear
+        </Button>
+      </Stack>
+      <Box mt={2} display="flex" gap={1.5} flexWrap="wrap">
         {recentSearches.map((search, i) => (
           <Chip key={i} label={search} onClick={() => setSearch(search)} />
         ))}
