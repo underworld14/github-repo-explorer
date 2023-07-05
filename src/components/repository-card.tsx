@@ -109,7 +109,7 @@ export default function RepositoryCard({ repository }: RepositoryCardProps) {
               {repository.open_issues_count}
             </Stack>
           </Stack>
-          <IconButton size="small" onClick={handleClickMenu}>
+          <IconButton data-testid="clone-button" size="small" onClick={handleClickMenu}>
             <FileCopyIcon fontSize="inherit" />
           </IconButton>
           <Menu
@@ -118,11 +118,15 @@ export default function RepositoryCard({ repository }: RepositoryCardProps) {
             open={open}
             onClose={handleCloseMenu}
             MenuListProps={{
-              "aria-labelledby": "basic-button",
+              "aria-labelledby": "clone-menu",
             }}
           >
-            <MenuItem onClick={() => handleCloneRepository(true)}>Clone with Http</MenuItem>
-            <MenuItem onClick={() => handleCloneRepository(false)}>Clone with SSH</MenuItem>
+            <MenuItem data-testid="clone-with-http" onClick={() => handleCloneRepository(true)}>
+              Clone with Http
+            </MenuItem>
+            <MenuItem data-testid="clone-with-ssh" onClick={() => handleCloneRepository(false)}>
+              Clone with SSH
+            </MenuItem>
           </Menu>
         </Stack>
       </Box>

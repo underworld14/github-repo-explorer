@@ -1,0 +1,256 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RepositoryCard > should render correctly 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded css-io83n2-MuiPaper-root"
+  >
+    <div
+      class="MuiBox-root css-1sb7ptk"
+    >
+      <div
+        class="MuiBox-root css-0"
+      >
+        <div
+          class="MuiStack-root css-1jv2z0n-MuiStack-root"
+        >
+          <div
+            class="MuiStack-root css-2tuz9w-MuiStack-root"
+          >
+            <div
+              class="MuiAvatar-root MuiAvatar-circular css-1nvoej8-MuiAvatar-root"
+            >
+              <img
+                alt="sudheerj"
+                class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+                src="https://avatars.githubusercontent.com/u/3127317?v=4"
+              />
+            </div>
+            <a
+              class="MuiTypography-root MuiTypography-body1 css-2fxgtc-MuiTypography-root"
+              href="https://github.com/sudheerj/reactjs-interview-questions"
+              target="_blank"
+            >
+              sudheerj/reactjs-interview-questions
+            </a>
+          </div>
+          <div
+            class="MuiStack-root css-vuohop-MuiStack-root"
+          >
+            <div
+              class="MuiBox-root css-x8w7di"
+            />
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-yvvtjl-MuiTypography-root"
+            >
+              JavaScript
+            </p>
+          </div>
+        </div>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-1uue9on-MuiTypography-root"
+        >
+          List of top 500 ReactJS Interview Questions & Answers....Coding exercise questions are coming soon!!
+        </p>
+        <div
+          class="MuiBox-root css-ujorij"
+        >
+          <div
+            class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorInfo MuiChip-filledInfo css-omiwvk-MuiChip-root"
+          >
+            <span
+              class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+            >
+              interview-preparation
+            </span>
+          </div>
+          <div
+            class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorInfo MuiChip-filledInfo css-omiwvk-MuiChip-root"
+          >
+            <span
+              class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+            >
+              interview-questions
+            </span>
+          </div>
+          <div
+            class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorInfo MuiChip-filledInfo css-omiwvk-MuiChip-root"
+          >
+            <span
+              class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+            >
+              javascript
+            </span>
+          </div>
+          <div
+            class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorInfo MuiChip-filledInfo css-omiwvk-MuiChip-root"
+          >
+            <span
+              class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+            >
+              javascript-applications
+            </span>
+          </div>
+          <div
+            class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorInfo MuiChip-filledInfo css-omiwvk-MuiChip-root"
+          >
+            <span
+              class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+            >
+              javascript-framework
+            </span>
+          </div>
+          <div
+            class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorInfo MuiChip-filledInfo css-omiwvk-MuiChip-root"
+          >
+            <span
+              class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+            >
+              javascript-interview-questions
+            </span>
+          </div>
+          <div
+            class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorInfo MuiChip-filledInfo css-omiwvk-MuiChip-root"
+          >
+            <span
+              class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+            >
+              react
+            </span>
+          </div>
+          <div
+            class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorInfo MuiChip-filledInfo css-omiwvk-MuiChip-root"
+          >
+            <span
+              class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+            >
+              react-interview-questions
+            </span>
+          </div>
+          <div
+            class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorInfo MuiChip-filledInfo css-omiwvk-MuiChip-root"
+          >
+            <span
+              class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+            >
+              react-native
+            </span>
+          </div>
+          <div
+            class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorInfo MuiChip-filledInfo css-omiwvk-MuiChip-root"
+          >
+            <span
+              class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+            >
+              react-router
+            </span>
+          </div>
+          <div
+            class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorInfo MuiChip-filledInfo css-omiwvk-MuiChip-root"
+          >
+            <span
+              class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+            >
+              react16
+            </span>
+          </div>
+          <div
+            class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorInfo MuiChip-filledInfo css-omiwvk-MuiChip-root"
+          >
+            <span
+              class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+            >
+              reactjs
+            </span>
+          </div>
+          <div
+            class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorInfo MuiChip-filledInfo css-omiwvk-MuiChip-root"
+          >
+            <span
+              class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+            >
+              redux
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiStack-root css-b9cd81-MuiStack-root"
+      >
+        <div
+          class="MuiStack-root css-z5dclh-MuiStack-root"
+        >
+          <div
+            class="MuiStack-root css-6bgzc8-MuiStack-root"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vnn4cn-MuiSvgIcon-root"
+              data-testid="StarIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+            30224
+          </div>
+          <div
+            class="MuiStack-root css-6bgzc8-MuiStack-root"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vnn4cn-MuiSvgIcon-root"
+              data-testid="ForkLeftIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M9.41 15.59 8 17l-4-4 4-4 1.41 1.41L7.83 12c1.51-.33 3.73.08 5.17 1.36V6.83l-1.59 1.59L10 7l4-4 4 4-1.41 1.41L15 6.83V21h-2v-4c-.73-2.58-3.07-3.47-5.17-3l1.58 1.59z"
+              />
+            </svg>
+            7450
+          </div>
+          <div
+            class="MuiStack-root css-1d9cypr-MuiStack-root"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vnn4cn-MuiSvgIcon-root"
+              data-testid="BugReportIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5c-.49 0-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-6 8h-4v-2h4v2zm0-4h-4v-2h4v2z"
+              />
+            </svg>
+            14
+          </div>
+        </div>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+            data-testid="FileCopyIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm-1 4 6 6v10c0 1.1-.9 2-2 2H7.99C6.89 23 6 22.1 6 21l.01-14c0-1.1.89-2 1.99-2h7zm-1 7h5.5L14 6.5V12z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
