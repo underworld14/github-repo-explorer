@@ -19,6 +19,8 @@ function App() {
     per_page: perPage,
   });
 
+  const paginationCount = Math.ceil(totalCount / perPage);
+
   useEffect(() => {
     setPage(1);
   }, [debouncedSearch]);
@@ -35,7 +37,11 @@ function App() {
       <Grid container>
         {!isMobile && (
           <Grid item xs={0} md={3}>
-            <DesktopSidebar search={search} setSearch={setSearch} />
+            <DesktopSidebar
+              search={search}
+              setSearch={setSearch}
+              debouncedSearch={debouncedSearch}
+            />
           </Grid>
         )}
         <Grid item xs={12} md={9}>
@@ -65,7 +71,7 @@ function App() {
                 <Pagination
                   size={isMobile ? "small" : "medium"}
                   page={page}
-                  count={Math.ceil(totalCount / perPage)}
+                  count={paginationCount > 20 ? 20 : paginationCount}
                   onChange={(e, page) => setPage(page)}
                   variant="outlined"
                   shape="rounded"
