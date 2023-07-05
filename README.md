@@ -32,6 +32,12 @@ Start the project development
 npm run dev
 ```
 
+Run the testing
+
+```bash
+npm run test
+```
+
 ## Build
 
 To build this project run
