@@ -1,14 +1,45 @@
-import { Box, Typography, TextField } from "@mui/material";
+import { useState, useEffect } from "react";
+import { Box, Typography, TextField, Chip } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import SearchIcon from "@mui/icons-material/Search";
 import { lightGreen } from "@mui/material/colors";
 
 interface DesktopSidebarProps {
+  debouncedSearch?: string;
   search: string;
   setSearch: (value: string) => void;
 }
 
-export default function DesktopSidebar({ search, setSearch }: DesktopSidebarProps) {
+export default function DesktopSidebar({
+  search,
+  setSearch,
+  debouncedSearch,
+}: DesktopSidebarProps) {
+  const [recentSearches, setRecentSearches] = useState<string[]>([]);
+
+  useEffect(() => {
+    const recentSearches = localStorage.getItem("recentSearches");
+    if (recentSearches) {
+      setRecentSearches(JSON.parse(recentSearches));
+    }
+  }, []);
+
+  useEffect(() => {
+    if (debouncedSearch) {
+      setRecentSearches((prev) => {
+        if (prev.includes(debouncedSearch)) {
+          return prev;
+        }
+        const newRecentSearches = [debouncedSearch, ...prev];
+        if (newRecentSearches.length > 10) {
+          newRecentSearches.pop();
+        }
+        localStorage.setItem("recentSearches", JSON.stringify(newRecentSearches));
+        return newRecentSearches;
+      });
+    }
+  }, [debouncedSearch]);
+
   return (
     <Box
       component="aside"
@@ -36,6 +67,14 @@ export default function DesktopSidebar({ search, setSearch }: DesktopSidebarProp
           startAdornment: <SearchIcon sx={{ mr: 2 }} />,
         }}
       />
+      <Typography mt={3} fontWeight={700} fontSize={18} color="white">
+        Recent Searches
+      </Typography>
+      <Box mt={2} display="flex" gap={2} flexWrap="wrap">
+        {recentSearches.map((search, i) => (
+          <Chip key={i} label={search} onClick={() => setSearch(search)} />
+        ))}
+      </Box>
     </Box>
   );
 }
