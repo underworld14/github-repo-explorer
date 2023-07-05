@@ -1,5 +1,5 @@
 import { RepositoryCard } from "..";
-import { render, screen, user } from "../../tests/testUtils";
+import { render, screen } from "../../tests/testUtils";
 
 const sampleRepository = {
   id: 135614069,
